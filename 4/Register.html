@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Đăng Ký Học Thử</title>
+  <style>
+    body {
+      
+    
+      color: #333;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+
+    }
+    .container {
+      width: 40%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #feaac6; /* Màu hồng nhạt */
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #800080; /* Màu tím */
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #800080; /* Màu tím */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"] {
+      width: calc(100% - 12px);
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #800080; /* Màu tím */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      width: 100%; /* Nút chiếm toàn bộ chiều rộng */
+    }
+    input[type="submit"]:hover {
+      background-color: #6a006a; /* Màu tím nhạt hơn */
+    }
+    .form-img {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-img img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #800080; /* Màu viền tím */
+    }
+    .form-logo img {
+      margin: 30px;
+      width: 500px;
+      height: 60px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-img">
+      <img src=".\images\Logo.jpg" alt="Hình đại diện">
+    </div>
+    <h1>Đăng Ký Học Thử Miễn Phí</h1>
+    <form action="submit.php" method="post"> <!-- Thay đổi 'submit.php' thành file xử lý form của bạn -->
+      <div class="form-group">
+        <label for="name">Họ và Tên Bé:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Ngày Tháng Năm Sinh:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="parentName">Tên Phụ Huynh:</label>
+        <input type="text" id="parentName" name="parentName" required>
+      </div>
+      <div class="form-group">
+        <label for="parentPhone">Số Điện Thoại Phụ Huynh:</label>
+        <input type="tel" id="parentPhone" name="parentPhone" required>
+      </div>
+      <div class="form-group">
+        <label for="facebook">Facebook:</label>
+        <input type="text" id="facebook" name="facebook">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+
+      <input type="submit" value="Đăng Ký">
+      <div class="form-logo">
+      <img src="./images/20190808091547_welearn.png" alt="Logo">
+    </div>
+    </form>
+  </div>
+</body>
+</html>

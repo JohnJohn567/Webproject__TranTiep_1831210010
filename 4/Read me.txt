@@ -1,0 +1,4 @@
+Font:
++ Text shadow: Herr Von Muellerhoff
++ Headings: Cormorant Garamond
++ Normal text: Roboto
